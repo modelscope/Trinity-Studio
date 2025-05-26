@@ -7,7 +7,6 @@ This is a monorepo for the Trinity Studio web portal, see more technical details
 ```
 src/                             # Monorepo root
 ├── scripts/                     # Useful and reference cfg/scripts
-├── node_modules/                # Shared node_modules
 ├── src/                         # Source code directory
 │   ├── package.json             # Root package.json with shared dependencies
 │   ├── package-lock.json        # Lock file for consistent dependencies

@@ -1,0 +1,43 @@
+{
+  "baseUrl": "http://localhost",
+  "services": {
+    "pgadmin": {
+      "port": 3002,
+      "backendPort": 3000,
+      "frontendPort": 3001,
+      "backendUrl": "http://localhost:3000"
+    },
+    "labelStudio": {
+      "port": 8082,
+      "targetUrl": "http://localhost:7070"
+    },
+    "trainingPortal": {
+      "backendPort": 3004,
+      "frontendPort": 3003,
+      "backendUrl": "http://localhost:3004"
+    },
+    "configManager": {
+      "port": 8501,
+      "targetUrl": "http://localhost:8501"
+    },
+    "rootConfig": {
+      "port": 9000
+    },
+    "wandb": {
+      "baseUrl": "http://localhost:8083"
+    }
+  },
+  "database": {
+    "connections": [
+      {
+        "id": "local-dev",
+        "name": "Local Development",
+        "host": "localhost",
+        "port": 5432,
+        "database": "as_rft",
+        "username": "postgres",
+        "password": "postgres"
+      }
+    ]
+  }
+} 

@@ -1,0 +1,19 @@
+{
+  "name": "label-studio-backend",
+  "version": "1.0.0",
+  "description": "Backend proxy server for Label Studio",
+  "main": "server.js",
+  "scripts": {
+    "start": "node start.js",
+    "start:direct": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+} 

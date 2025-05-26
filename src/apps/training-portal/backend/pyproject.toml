@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "training-portal-backend"
+version = "0.1.0"
+description = "Backend for the Training Portal application"
+requires-python = ">=3.10"
+dependencies = [
+    "flask>=2.0.0",
+    "flask-cors>=3.0.0",
+    "wandb==0.17.0",
+    "python-dotenv>=1.0.0",
+    "waitress>=2.1.0",
+    "psycopg2-binary>=2.9.0",
+    "pyyaml>=6.0.0",
+    "python-dateutil>=2.8.2"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=22.0.0",
+    "isort>=5.0.0",
+    "flake8>=4.0.0",
+]
+
+[tool.setuptools]
+packages = ["app"]
+
+[tool.black]
+line-length = 88
+target-version = ["py38"]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3 

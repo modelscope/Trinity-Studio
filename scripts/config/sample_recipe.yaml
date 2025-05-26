@@ -1,0 +1,33 @@
+model:
+  project: "sample-project"
+  name: "sample-model"
+  modelPath: "/path/to/model"
+  checkpointPath: "/path/to/checkpoint"
+  monitorType: "wandb"
+  nodeNum: 1
+  gpuPerNode: 1
+  maxPromptTokens: 2048
+  maxResponseTokens: 2048
+
+buffer:
+  totalEpochs: 1
+  taskNumPerBatch: 1
+  datasetPath: "/path/to/dataset"
+  defaultWorkflowType: "default"
+  defaultRewardFnType: "default"
+  storageType: "file"
+
+connector:
+  engineType: "vllm"
+  engineNum: 1
+  tensorParallelSize: 1
+  repeatTimes: 1
+  syncMethod: "async"
+  syncIterationInterval: 1
+
+trainer:
+  trainerType: "verl"
+  algorithmType: "ppo"
+  sftWarmupIteration: 0
+  evalInterval: 100
+  saveFreq: 1000 

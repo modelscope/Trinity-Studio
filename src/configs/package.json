@@ -1,0 +1,7 @@
+{
+  "name": "web-portal-configs",
+  "version": "1.0.0",
+  "description": "Configuration for web portal services",
+  "main": "index.js",
+  "dependencies": {}
+} 
